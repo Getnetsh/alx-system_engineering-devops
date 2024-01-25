@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# print stuff using a until loop
+# This script is displaying "Best School" 10 times
 
-i=10
-
-until [ $i -eq 0 ]; do
-    echo "Holberton School"
-    let i=i-1
+COUNT=0
+until [ $COUNT -gt 9 ]
+do
+	echo "Best School"
+	COUNT=$(( COUNT + 1 ))
 done
